@@ -1,12 +1,11 @@
 import React from "react";
 // import RoomSlice from "../Features/RoomSlice";
 import { useDispatch } from 'react-redux'
-import { Link } from "react-router";
+// import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import { data } from "../Data";
 
 const RoomDetail = () => {
-
-   
 
     return(
         <>

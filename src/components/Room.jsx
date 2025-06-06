@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router";
+// import { useParams } from "react-router";
+import { useParams } from "react-router-dom"; 
+
 import { data } from "../Data";
-import { Link } from "react-router";
+// import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 const Room = () => {
     const [room, setRoom] = useState([])
@@ -14,7 +17,6 @@ const Room = () => {
         let newData = data.filter((ele) => ele.id == rid)
          setRoom(newData)
     } ,[])
-       
 
     return(
         <>
@@ -35,6 +37,7 @@ const Room = () => {
                                     <br />
                                     <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{ele.rating}</p>
                                     <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{ele.description}</p>
+                                    
                                     
                                    
                                 </div>
